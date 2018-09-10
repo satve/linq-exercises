@@ -15,9 +15,9 @@ namespace OOP_RPG
             this.hero = hero;
             this.game = game;
             this.AddMonster("Squid", 9, 8, 20);
-            this.AddMonster("hkus", 8, 7, 12);
-            this.AddMonster("peed", 12, 5, 19);
-            this.AddMonster("uhdis", 10, 8, 22);
+            this.AddMonster("Hkus", 8, 7, 12);
+            this.AddMonster("Peed", 12, 5, 19);
+            this.AddMonster("Uhdis", 10, 8, 22);
         }
         
         public void AddMonster(string name, int strength, int defense, int hp) {
