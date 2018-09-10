@@ -3,7 +3,7 @@ namespace OOP_RPG
 {
     public class Weapon
     {
-        public Weapon(string name = "NO IDENTITY", int strength = 16) {
+        public Weapon(string name , int strength) {
 
             this.Name = name;
             this.Strength = strength;
