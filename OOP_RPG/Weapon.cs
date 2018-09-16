@@ -1,14 +1,16 @@
 using System;
+using System.Collections.Generic;
+
 namespace OOP_RPG
 {
-    public class Weapon : Item
+    public class Weapon : IItem
     {
-        public Weapon(string name, int strength, int OriginalValue, int ResellValue)
+        public Weapon(string name, int strength, int originalValue, int resellValue)
         {
             this.Name = name;
             this.Strength = strength;
-            this.OriginalValue = OriginalValue;
-            this.ResellValue = ResellValue;
+            this.OriginalValue = originalValue;
+            this.ResellValue = resellValue;
         }
 
         public string Name { get; set; }

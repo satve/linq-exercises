@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace OOP_RPG
 {
-    public class Potion : Item
+    public class Potion : IItem
     {
         public string Name { get; set; }
         public int HP { get; set; }
         public int OriginalValue { get; set; }
         public int ResellValue { get; set; }
 
-        public Potion(string Name, int HP, int OriginalValue, int ResellValue)
+        public Potion(string name, int hp, int originalValue, int resellValue)
         {
-            this.Name = Name;
-            this.HP = HP;
-            this.OriginalValue = OriginalValue;
-            this.ResellValue = ResellValue;
+            this.Name = name;
+            this.HP = hp;
+            this.OriginalValue = originalValue;
+            this.ResellValue = resellValue;
         }
     }
 }

@@ -1,14 +1,14 @@
 using System;
 namespace OOP_RPG
 {
-    public class Armor : Item
+    public class Armor : IItem
     {
-        public Armor(string name, int defense, int OriginalValue, int ResellValue)
+        public Armor(string name, int defense, int originalValue, int resellValue)
         {
             this.Name = name;
             this.Defense = defense;
-            this.OriginalValue = OriginalValue;
-            this.ResellValue = ResellValue;
+            this.OriginalValue = originalValue;
+            this.ResellValue = resellValue;
         }
 
         public string Name { get; set; }
